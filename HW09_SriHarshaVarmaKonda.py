@@ -24,6 +24,7 @@ class University:
             """ This for loop is to get the CWID and Course of students to course_list """
             if file.endswith("grades.txt"):
                 file_name = file
+                print(file_name)
                 try:
                     fp = open(file_name, "r")
                 except FileNotFoundError:
@@ -117,6 +118,6 @@ class University:
         return self.pt_instructor    
 
 
-uni = University("/Users/harru/PYTHON(SSW 810 )")
+uni = University("C:/PYTHON/Student-Repository")
 print(uni.student())
 print(uni.instructor())
